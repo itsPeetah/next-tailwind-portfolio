@@ -1,39 +1,63 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import RetroButton from '../components/RetroButton'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import RetroButton from "../components/RetroButton";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 font-display">
+    <div className="flex min-h-screen flex-col items-center justify-start font-display">
       <Head>
         <title>Next.js Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex w-full flex-1 | flex-col md:flex-row | items-center justify-start text-center p-4">
-
-        <div className='flex flex-col items-start border-2 border-black p-4 w-full sm:min-w-sm sm:max-w-sm md:h-full'>
-        itsPeetah
-          <div className='border-2 border-black p-2 w-full'>
-          <img className="min-w-full max-h-80  object-cover object-top" src="/img/selfie.jpg"/>
-          <p className='mt-2 pt-2 text-gray-600 border-t-2 border-t-black'>generic elevator mirror selfie</p>
-          </div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <header className=" w-full | flex flex-row justify-end items-center | px-2 pb-2 | border-b-2 border-black">
+        <a className="mx-2">ʕ •ᴥ•ʔ</a>
+        <div className="flex-grow" />
+        <div className="hidden | xs:flex">
+          <a className="mx-2 | border-b-2 border-transparent || hover:border-emerald-300 hover:text-emerald-300">
+            Projects
+          </a>
+          •
+          <a className="mx-2 | border-b-2 border-transparent || hover:border-amber-300 hover:text-amber-300">
+            Socials
+          </a>
         </div>
-
-
-
-        <RetroButton>Test 1</RetroButton>
-        <RetroButton>Test 2</RetroButton>
-        <RetroButton>Test 3</RetroButton>
+      </header>
+      <main className="flex flex-col md:flex-row flex-1 items-start justify-start | w-full h-full text-center border">
+        <div className="flex flex-col text-left py-2 px-4 | m-4 | border-2 border-black ">
+          itspeetah
+          <div className="flex flex-col border-2 border-black p-4 pb-1 my-2 text-center">
+            <img
+              src="/img/selfie.jpg"
+              className="object-cover object-top h-72"
+            />
+            <p className="mt-2 py-1 border-t-2 border-black text-gray-500 ">
+              generic mirror selfie
+            </p>
+          </div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div className="m-2 flex flex-col flex-1">
+          <RetroButton>hello</RetroButton>
+          <RetroButton>hello</RetroButton>
+          <RetroButton>hello</RetroButton>
+          <RetroButton>hello</RetroButton>
+          <RetroButton>hello</RetroButton>
+        </div>
       </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        
+      <footer className="flex w-full items-center justify-center | text-xs py-4">
+        <a className="mx-2 underline hover:text-blue-400">/itsPeetah</a>
+        2022 • powered by pizza
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
