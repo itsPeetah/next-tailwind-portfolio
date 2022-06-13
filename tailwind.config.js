@@ -13,6 +13,10 @@ module.exports = {
       screens:{
         'xs':'480px',
         '2xs':'320px'
+      },
+      flexGrow: {
+        '2': 2,
+        '3':3,
       }
     },
   },
