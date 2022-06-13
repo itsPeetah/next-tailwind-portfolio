@@ -7,7 +7,7 @@ export default function ProfileCard() {
   return (
     <div
       id="floater"
-      className="flex flex-col space-y-2 md:h-[26rem] md:space-y-0 md:space-x-2  md:flex-row p-2 md:m-2 | | md:border-2 md:border-current"
+      className="flex flex-col space-y-2 md:h-[26rem] md:space-y-0 md:space-x-2  md:flex-row p-2 | md:border-2 md:border-current"
     >
       <div id="id_card" className="p-2 | w-full md:w-80 | overflow-hidden ">
         <h1 className="mb-1 ">itspeetah - founder</h1>
@@ -16,13 +16,6 @@ export default function ProfileCard() {
         </div>
 
         <div className="hidden md:block">
-          {/* <h1 className="last:mb-1 first:mt-1">
-            <span className=" opacity-50">name:</span> peetah
-          </h1>
-          <h1 className="last:mb-1 first:mt-1">
-            <span className=" opacity-50">age:</span> 23
-          </h1>
-           */}
           <p>Hello world, this is supposed to be a quote by me...</p>
         </div>
       </div>

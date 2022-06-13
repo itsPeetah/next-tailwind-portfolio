@@ -20,7 +20,10 @@ export default function PageFrame(props: { children?: any; title: string }) {
             Home
           </a>
           •
-          <a className="mx-2 | border-b-2 border-transparent || hover:border-emerald-500 hover:text-emerald-500">
+          <a
+            href="/games"
+            className="mx-2 | border-b-2 border-transparent || hover:border-emerald-500 hover:text-emerald-500"
+          >
             Games
           </a>
           •
@@ -37,13 +40,11 @@ export default function PageFrame(props: { children?: any; title: string }) {
         </div>
       </header>
 
-      <main
-        className="flex-1 w-full h-full md:w-max | py-2 flex flex-col" /*md:grid md:grid-cols-2 place-content-start*/
-      >
+      <main className="flex-1 w-full h-full | flex flex-col justify-center items-center">
         {props.children}
       </main>
 
-      <footer className="flex w-full items-center justify-center | border-t-2 border-current text-xs py-4">
+      <footer className="flex w-full items-center justify-center | border-t-2 border-current text-xs py-4 z-50 bg-white">
         <a className="mx-2 underline hover:text-blue-400">/itsPeetah</a>
         2022 • powered by pizza
       </footer>
