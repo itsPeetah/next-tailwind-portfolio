@@ -6,9 +6,7 @@ import ProfileCard from "../components/ProfileCard";
 const Home: NextPage = () => {
   return (
     <PageFrame title="Team">
-      <div className="flex-1 flex flex-col justify-center items-center">
-        hello world
-      </div>
+      <ProfileCard />
     </PageFrame>
   );
 };

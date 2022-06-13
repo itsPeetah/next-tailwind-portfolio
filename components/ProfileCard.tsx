@@ -10,18 +10,20 @@ export default function ProfileCard() {
       className="flex flex-col space-y-2 md:h-[26rem] md:space-y-0 md:space-x-2  md:flex-row p-2 md:m-2 | | md:border-2 md:border-current"
     >
       <div id="id_card" className="p-2 | w-full md:w-80 | overflow-hidden ">
-        <h1 className="mb-1 ">itspeetah</h1>
+        <h1 className="mb-1 ">itspeetah - founder</h1>
         <div className="w-full aspect-w-1 aspect-h-1 mb-1 | border-2 border-current">
           <img src="/img/selfie.jpg" className="object-cover object-top"></img>
         </div>
 
         <div className="hidden md:block">
-          <h1 className="last:mb-1 first:mt-1">
+          {/* <h1 className="last:mb-1 first:mt-1">
             <span className=" opacity-50">name:</span> peetah
           </h1>
           <h1 className="last:mb-1 first:mt-1">
             <span className=" opacity-50">age:</span> 23
           </h1>
+           */}
+          <p>Hello world, this is supposed to be a quote by me...</p>
         </div>
       </div>
       <div className="min-h-0 md:min-h-full border border-current" />
@@ -78,16 +80,16 @@ export default function ProfileCard() {
               >
                 <span>instagram/peetah.gyros</span>
                 <span>
-                  <LinkIcon className="inline h-4" />
+                  <ExternalLinkIcon className="ml-1 inline h-4" />
                 </span>
               </a>
               <a
                 className=" text-sky-600 hover:underline"
-                href="https://instagram.com/peetah.gyros"
+                href="https://twitter.com/peetahfromitaly"
               >
                 <span>twitter/peetahfromitaly</span>
                 <span>
-                  <LinkIcon className="inline h-4" />
+                  <ExternalLinkIcon className="ml-1 inline h-4" />
                 </span>
               </a>
 
