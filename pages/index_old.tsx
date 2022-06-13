@@ -27,39 +27,32 @@ const Home: NextPage = () => {
         </div>
       </header>
 
-      <main className="flex-1 w-full h-full | grid content-start md:content-center md:place-content-center">
-        <div className="flex flex-col space-y-2 md:h-[26rem] md:space-y-0 md:space-x-2  md:flex-row p-2 md:m-2 | | md:border-2 md:border-black">
-          <div id="id_card" className="p-2 | w-full md:w-80 | overflow-hidden ">
-            <h1 className="mb-1 ">itspeetah</h1>
-            <div className="w-full aspect-w-1 aspect-h-1 mb-1 | border-2 border-black">
+      <main className="flex flex-1 items-start justify-start | w-full h-full text-center">
+        <div className="flex flex-col flex-1 md:flex-row py-4 px-4">
+          <div className="flex flex-col text-left flex-shrink-0 | md:w-96 py-2 px-4 | border-2 border-black ">
+            itspeetah
+            <div className="flex flex-col border-2 border-black p-4 pb-1 my-2 text-center">
               <img
                 src="/img/selfie.jpg"
-                className="object-cover object-top"
-              ></img>
+                className="object-cover object-top h-72"
+              />
+              <p className="mt-2 py-1 border-t-2 border-black text-gray-500 ">
+                generic mirror selfie
+              </p>
             </div>
-
-            <div className="hidden md:block">
-              <h1 className="last:mb-1 first:mt-1">
-                <span className=" opacity-50">name:</span> peetah
-              </h1>
-              <h1 className="last:mb-1 first:mt-1">
-                <span className=" opacity-50">age:</span> 23
-              </h1>
-            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </div>
-          <div className="min-h-0 md:min-h-full border border-black" />
-          <div
-            id="tab_card"
-            className="p-2 flex flex-col | w-full md:w-80 overflow-scroll"
-          >
-            <div className="flex flex-row space-x-2 mb-2">
-              <RetroButton>Bio</RetroButton>
-              <RetroButton>Edu</RetroButton>
-              <RetroButton>Roles</RetroButton>
-              <RetroButton>Contacts</RetroButton>
-            </div>
-
-            <div className="w-full h-full pt-2 | border-t-2 border-black overflow-scroll">
+          <div className=" flex-col flex-grow mt-2 md:mt-0 px-2 space-y-2">
+            <RetroButton onClick={() => setSection(0)}>Section 1</RetroButton>
+            {section === 0 && (
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -69,6 +62,9 @@ const Home: NextPage = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+            )}
+            <RetroButton onClick={() => setSection(1)}>Section 2</RetroButton>
+            {section === 1 && (
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -78,6 +74,9 @@ const Home: NextPage = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
+            )}
+            <RetroButton onClick={() => setSection(2)}>Section 3</RetroButton>
+            {section === 2 && (
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -87,7 +86,32 @@ const Home: NextPage = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-            </div>
+            )}
+            <RetroButton onClick={() => setSection(3)}>Section 4</RetroButton>
+            {section === 3 && (
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            )}
+            <RetroButton onClick={() => setSection(4)}>Section 5</RetroButton>
+            {section === 4 && (
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            )}
+            <div className="border-t-2 border-black" />
           </div>
         </div>
       </main>
