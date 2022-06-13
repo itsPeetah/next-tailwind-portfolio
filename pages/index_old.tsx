@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import RetroButton from "../components/RetroButton";
 
 const Home: NextPage = () => {
   const [section, setSection] = useState(0);
@@ -51,7 +50,7 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className=" flex-col flex-grow mt-2 md:mt-0 px-2 space-y-2">
-            <RetroButton onClick={() => setSection(0)}>Section 1</RetroButton>
+            {/* <RetroButton onClick={() => setSection(0)}>Section 1</RetroButton>
             {section === 0 && (
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -110,7 +109,7 @@ const Home: NextPage = () => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-            )}
+            )} */}
             <div className="border-t-2 border-black" />
           </div>
         </div>
